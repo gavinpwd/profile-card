@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color:  hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -400px left -280px, bottom -545px right -200px;
+    background-attachment: scroll, scroll;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color:  hsl(0, 0%, 59%);
+    padding-top: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+}
+
+.card img{
+    margin-top: 90px;
+}
+
+img {
+    border-radius: 50%;
+    border: white solid 4px;
+    margin
+}
+
+.info {
+    padding-top: 20px;
+}
+
+.info span {
+    color:  hsl(0, 0%, 59%);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.desc {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding-top: 30px;
+    flex: 1;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color:  hsl(0, 0%, 59%);
+    
+}
+
+.desc span {
+    display: block;
+    color:  hsl(0, 0%, 0%);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#footer p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 10px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-position: top -600px left -650px, bottom -550px right -750px;
+        background-attachment: scroll, scroll;
+    }
+}
